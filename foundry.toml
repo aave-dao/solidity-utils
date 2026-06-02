@@ -11,6 +11,9 @@ optimizer_runs = 200
 solc = '0.8.27'
 bytecode_hash = 'none'
 
+[lint]
+lint_on_build = false
+
 [profile.zksync]
 src = 'zksync/src'
 test = 'zksync/test'
