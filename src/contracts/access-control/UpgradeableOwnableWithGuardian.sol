@@ -5,7 +5,7 @@ import {OwnableUpgradeable} from 'openzeppelin-contracts-upgradeable/contracts/a
 import {IWithGuardian} from './interfaces/IWithGuardian.sol';
 
 /**
- * Forked version of https://github.com/bgd-labs/solidity-utils/blob/main/src/contracts/access-control/OwnableWithGuardian.sol
+ * Forked version of https://github.com/aave-dao/solidity-utils/blob/main/src/contracts/access-control/OwnableWithGuardian.sol
  * Relying on UpgradableOwnable & moving the storage to 7201
  */
 abstract contract UpgradeableOwnableWithGuardian is OwnableUpgradeable, IWithGuardian {

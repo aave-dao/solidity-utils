@@ -1,5 +1,5 @@
 {
-  "name": "@bgd-labs/solidity-utils",
+  "name": "@aave-dao/solidity-utils",
   "version": "1.1.2",
   "description": "Common contracts we use almost everywhere",
   "publishConfig": {
@@ -21,15 +21,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bgd-labs/solidity-utils.git"
+    "url": "git+https://github.com/aave-dao/solidity-utils.git"
   },
   "keywords": [],
-  "author": "bgd-labs",
+  "author": "aave-dao",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bgd-labs/solidity-utils/issues"
+    "url": "https://github.com/aave-dao/solidity-utils/issues"
   },
-  "homepage": "https://github.com/bgd-labs/solidity-utils#readme",
+  "homepage": "https://github.com/aave-dao/solidity-utils#readme",
   "devDependencies": {
     "@changesets/cli": "^2.28.1",
     "prettier": "^2.8.3",

@@ -1,4 +1,4 @@
-# BGD Labs Solidity utils
+# Aave Solidity utils
 
 Common contracts we use almost everywhere
 
