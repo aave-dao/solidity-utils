@@ -31,6 +31,7 @@ library ChainIds {
   uint256 internal constant XLAYER = 196;
   uint256 internal constant ANVIL = 31337;
   uint256 internal constant MEGAETH = 4326;
+  uint256 internal constant MONAD = 143;
 }
 
 library TestNetChainIds {
@@ -56,6 +57,7 @@ library TestNetChainIds {
   uint256 internal constant PLASMA_TESTNET = 9746;
   uint256 internal constant XLAYER_TESTNET = 1952;
   uint256 internal constant MEGAETH_TESTNET = 6342;
+  uint256 internal constant MONAD_TESTNET = 10143;
 }
 
 library ChainHelpers {
@@ -117,6 +119,8 @@ library ChainHelpers {
       newFork = vm.createSelectFork(vm.rpcUrl('xlayer'));
     } else if (chainId == ChainIds.MEGAETH) {
       newFork = vm.createSelectFork(vm.rpcUrl('megaeth'));
+    } else if (chainId == ChainIds.MONAD) {
+      newFork = vm.createSelectFork(vm.rpcUrl('monad'));
     } else {
       revert UnknownChainId();
     }
@@ -169,6 +173,8 @@ library ChainHelpers {
       networkName = 'xlayer';
     } else if (chainId == ChainIds.MEGAETH) {
       networkName = 'megaeth';
+    } else if (chainId == ChainIds.MONAD) {
+      networkName = 'monad';
     }
     // testnets
     else if (chainId == TestNetChainIds.ETHEREUM_SEPOLIA) {
@@ -211,6 +217,8 @@ library ChainHelpers {
       networkName = 'xlayer_testnet';
     } else if (chainId == TestNetChainIds.MEGAETH_TESTNET) {
       networkName = 'megaeth_testnet';
+    } else if (chainId == TestNetChainIds.MONAD_TESTNET) {
+      networkName = 'monad_testnet';
     } else {
       revert('chain id is not supported');
     }
