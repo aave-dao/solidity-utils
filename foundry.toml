@@ -66,6 +66,7 @@ soneium = "${RPC_SONEIUM}"
 bob = "${RPC_BOB}"
 xlayer = "${RPC_XLAYER}"
 megaeth = "${RPC_MEGAETH}"
+monad = "${RPC_MONAD}"
 
 [fuzz]
 no_zksync_reserved_addresses = true
