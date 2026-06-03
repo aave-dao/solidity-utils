@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.3
+
+### Patch Changes
+
+- 12cfc36: add monad
+
 ## 1.1.2
 
 ### Patch Changes
