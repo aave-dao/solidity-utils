@@ -119,6 +119,10 @@ abstract contract MegaEthScript is WithChainIdValidation {
   constructor() WithChainIdValidation(ChainIds.MEGAETH) {}
 }
 
+abstract contract MonadScript is WithChainIdValidation {
+  constructor() WithChainIdValidation(ChainIds.MONAD) {}
+}
+
 library Create2Utils {
   // https://github.com/safe-global/safe-singleton-factory
   address public constant CREATE2_FACTORY = 0x914d7Fec6aaC8cd542e72Bca78B30650d45643d7;
