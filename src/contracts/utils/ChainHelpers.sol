@@ -32,6 +32,7 @@ library ChainIds {
   uint256 internal constant ANVIL = 31337;
   uint256 internal constant MEGAETH = 4326;
   uint256 internal constant MONAD = 143;
+  uint256 internal constant ARC = 5042;
 }
 
 library TestNetChainIds {
@@ -121,6 +122,8 @@ library ChainHelpers {
       newFork = vm.createSelectFork(vm.rpcUrl('megaeth'));
     } else if (chainId == ChainIds.MONAD) {
       newFork = vm.createSelectFork(vm.rpcUrl('monad'));
+    } else if (chainId == ChainIds.ARC) {
+      newFork = vm.createSelectFork(vm.rpcUrl('arc'));
     } else {
       revert UnknownChainId();
     }
@@ -175,6 +178,8 @@ library ChainHelpers {
       networkName = 'megaeth';
     } else if (chainId == ChainIds.MONAD) {
       networkName = 'monad';
+    } else if (chainId == ChainIds.ARC) {
+      networkName = 'arc';
     }
     // testnets
     else if (chainId == TestNetChainIds.ETHEREUM_SEPOLIA) {

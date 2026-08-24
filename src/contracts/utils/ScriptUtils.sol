@@ -123,6 +123,10 @@ abstract contract MonadScript is WithChainIdValidation {
   constructor() WithChainIdValidation(ChainIds.MONAD) {}
 }
 
+abstract contract ArcScript is WithChainIdValidation {
+  constructor() WithChainIdValidation(ChainIds.ARC) {}
+}
+
 library Create2Utils {
   // https://github.com/safe-global/safe-singleton-factory
   address public constant CREATE2_FACTORY = 0x914d7Fec6aaC8cd542e72Bca78B30650d45643d7;
