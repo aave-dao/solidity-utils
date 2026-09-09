@@ -1,0 +1,19 @@
+.github/workflows/release.yml
+  s_ae1fe2fb085454::t_38bbbf9bf49a73 12-13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.2",
+  "base_commit_sha": "97b4bb2927fc996690f1f3ca90e6dbf43b118cd5",
+  "prompts": {},
+  "sessions": {
+    "s_ae1fe2fb085454": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "3cffb11a-10cb-4b96-b0da-e73846b69436",
+        "model": "claude-opus-5"
+      },
+      "human_author": "DhairyaSethi <55102840+DhairyaSethi@users.noreply.github.com>"
+    }
+  }
+}
