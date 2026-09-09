@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.4
+
+### Patch Changes
+
+- 998be6d: add arc
+
 ## 1.1.3
 
 ### Patch Changes
