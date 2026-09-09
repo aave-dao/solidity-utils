@@ -1,0 +1,19 @@
+test/create3Test.t.sol
+  s_ae1fe2fb085454::t_1a435dcb32c9a0 35,57
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.2",
+  "base_commit_sha": "459a28e581fe7ad3e0ff7722711ef1cb59f4b8ab",
+  "prompts": {},
+  "sessions": {
+    "s_ae1fe2fb085454": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "3cffb11a-10cb-4b96-b0da-e73846b69436",
+        "model": "claude-opus-5"
+      },
+      "human_author": "DhairyaSethi <55102840+DhairyaSethi@users.noreply.github.com>"
+    }
+  }
+}
