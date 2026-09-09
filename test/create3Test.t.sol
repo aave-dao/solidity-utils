@@ -32,6 +32,7 @@ contract Create3FactoryTest is Test {
   }
 
   function testCreate3WithoutValue(address someAddress, address owner, bytes32 salt) public {
+    vm.assume(owner != address(0)); // Ownable rejects a zero owner, so the constructor would revert
     bytes memory encodedParams = abi.encode(someAddress, owner);
     bytes memory code = type(MockContract).creationCode;
     // deploy Voting portal
@@ -53,6 +54,7 @@ contract Create3FactoryTest is Test {
   }
 
   function testCreate3WithValue(address someAddress, address owner, address creator) public {
+    vm.assume(owner != address(0)); // Ownable rejects a zero owner, so the constructor would revert
     bytes memory encodedParams = abi.encode(someAddress, owner);
     bytes memory code = type(MockContract).creationCode;
     bytes32 salt = keccak256(bytes('Voting portal eth-avax-2'));
