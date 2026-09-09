@@ -67,6 +67,7 @@ bob = "${RPC_BOB}"
 xlayer = "${RPC_XLAYER}"
 megaeth = "${RPC_MEGAETH}"
 monad = "${RPC_MONAD}"
+arc = "${RPC_ARC}"
 
 [fuzz]
 no_zksync_reserved_addresses = true

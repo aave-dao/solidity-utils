@@ -18,6 +18,7 @@ deploy-zksync	:; FOUNDRY_PROFILE=zksync forge script zksync/script/DeployTranspa
 deploy-xlayer :; forge script script/DeployTransparentProxyFactory.s.sol:DeployTransparentProxyFactory --rpc-url xlayer --broadcast --ledger --mnemonic-indexes ${MNEMONIC_INDEX} --sender ${LEDGER_SENDER} --verify --legacy -vvvv
 deploy-megaeth :; forge script script/DeployTransparentProxyFactory.s.sol:DeployTransparentProxyFactory --rpc-url megaeth --broadcast --ledger --mnemonic-indexes ${MNEMONIC_INDEX} --sender ${LEDGER_SENDER} --verify --legacy -vvvv --skip-simulation
 deploy-monad :; forge script script/DeployTransparentProxyFactory.s.sol:DeployTransparentProxyFactory --rpc-url monad --broadcast --ledger --mnemonic-indexes ${MNEMONIC_INDEX} --sender ${LEDGER_SENDER} --verify --legacy -vvvv
+deploy-arc :; forge script script/DeployTransparentProxyFactory.s.sol:DeployTransparentProxyFactory --rpc-url arc --broadcast --ledger --mnemonic-indexes ${MNEMONIC_INDEX} --sender ${LEDGER_SENDER} -vvvv
 # ---------------------------------------------- BASE SCRIPT CONFIGURATION ---------------------------------------------
 
 BASE_LEDGER = --ledger --mnemonic-indexes $(MNEMONIC_INDEX) --sender $(LEDGER_SENDER)
