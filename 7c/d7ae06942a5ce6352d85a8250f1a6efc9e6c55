@@ -1,0 +1,28 @@
+src/contracts/utils/ScriptUtils.sol
+  s_10327dbdc5153b::t_f9130cfb861e41 130-133
+foundry.toml
+  s_10327dbdc5153b::t_f9130cfb861e41 71
+.changeset/clean-bars-burn.md
+  s_10327dbdc5153b::t_8eceadbaa2c763 1-4
+  s_10327dbdc5153b::t_f9130cfb861e41 5
+.env.example
+  s_10327dbdc5153b::t_f9130cfb861e41 29
+src/contracts/utils/ChainHelpers.sol
+  s_10327dbdc5153b::t_f9130cfb861e41 36,128-129,186-187
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "7cd7ae06942a5ce6352d85a8250f1a6efc9e6c55",
+  "prompts": {},
+  "sessions": {
+    "s_10327dbdc5153b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "457ce1c7-69e6-4e4f-b538-aac98ac7cd93",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "AlbertoCentonze <11707683+AlbertoCentonze@users.noreply.github.com>"
+    }
+  }
+}
