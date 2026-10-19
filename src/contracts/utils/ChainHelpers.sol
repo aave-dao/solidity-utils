@@ -33,6 +33,7 @@ library ChainIds {
   uint256 internal constant MEGAETH = 4326;
   uint256 internal constant MONAD = 143;
   uint256 internal constant ARC = 5042;
+  uint256 internal constant TEMPO = 4217;
 }
 
 library TestNetChainIds {
@@ -124,6 +125,8 @@ library ChainHelpers {
       newFork = vm.createSelectFork(vm.rpcUrl('monad'));
     } else if (chainId == ChainIds.ARC) {
       newFork = vm.createSelectFork(vm.rpcUrl('arc'));
+    } else if (chainId == ChainIds.TEMPO) {
+      newFork = vm.createSelectFork(vm.rpcUrl('tempo'));
     } else {
       revert UnknownChainId();
     }
@@ -180,6 +183,8 @@ library ChainHelpers {
       networkName = 'monad';
     } else if (chainId == ChainIds.ARC) {
       networkName = 'arc';
+    } else if (chainId == ChainIds.TEMPO) {
+      networkName = 'tempo';
     }
     // testnets
     else if (chainId == TestNetChainIds.ETHEREUM_SEPOLIA) {
