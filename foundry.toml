@@ -68,6 +68,7 @@ xlayer = "${RPC_XLAYER}"
 megaeth = "${RPC_MEGAETH}"
 monad = "${RPC_MONAD}"
 arc = "${RPC_ARC}"
+tempo = "${RPC_TEMPO}"
 
 [fuzz]
 no_zksync_reserved_addresses = true
