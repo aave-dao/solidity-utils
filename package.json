@@ -1,6 +1,6 @@
 {
   "name": "@aave-dao/solidity-utils",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "Common contracts we use almost everywhere",
   "publishConfig": {
     "access": "public"
