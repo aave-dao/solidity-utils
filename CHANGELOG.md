@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.5
+
+### Patch Changes
+
+- 38c2041: add tempo
+
 ## 1.1.4
 
 ### Patch Changes
