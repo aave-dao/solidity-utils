@@ -9,6 +9,9 @@ abstract contract Ownable2StepWithGuardian is Ownable2Step, IWithGuardian {
   address private _guardian;
 
   constructor(address initialOwner, address initialGuardian) Ownable(initialOwner) {
+    if (initialGuardian == address(0)) {
+      revert InvalidGuardian(address(0));
+    }
     _updateGuardian(initialGuardian);
   }
 

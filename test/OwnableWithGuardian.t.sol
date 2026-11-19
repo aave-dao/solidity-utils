@@ -31,6 +31,11 @@ contract TestOfOwnableWithGuardian is Test {
     assertEq(withGuardian.guardian(), guardian);
   }
 
+  function testConstructorRevertsOnZeroGuardian() external {
+    vm.expectRevert(abi.encodeWithSelector(IWithGuardian.InvalidGuardian.selector, address(0)));
+    new ImplOwnableWithGuardian(owner, address(0));
+  }
+
   function testGuardianUpdateViaGuardian(address newGuardian) external {
     vm.startPrank(guardian);
     withGuardian.updateGuardian(newGuardian);

@@ -20,6 +20,11 @@ interface IWithGuardian {
   error OnlyGuardianOrOwnerInvalidCaller(address account);
 
   /**
+   * @dev The initial guardian is not a valid guardian account (e.g. `address(0)`).
+   */
+  error InvalidGuardian(address guardian);
+
+  /**
    * @dev get guardian address;
    */
   function guardian() external view returns (address);
