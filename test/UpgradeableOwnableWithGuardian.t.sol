@@ -30,6 +30,12 @@ contract TestOfUpgradableOwnableWithGuardian is Test {
     assertEq(withGuardian.guardian(), guardian);
   }
 
+  function test_initializer_zeroGuardian_shouldRevert() external {
+    ImplOwnableWithGuardian impl = new ImplOwnableWithGuardian();
+    vm.expectRevert(abi.encodeWithSelector(IWithGuardian.InvalidGuardian.selector, address(0)));
+    impl.initialize(owner, address(0));
+  }
+
   function test_onlyGuardian() external {
     vm.expectRevert(
       abi.encodeWithSelector(IWithGuardian.OnlyGuardianInvalidCaller.selector, address(this))

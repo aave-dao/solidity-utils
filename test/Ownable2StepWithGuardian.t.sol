@@ -37,6 +37,11 @@ contract TestOfOwnable2StepWithGuardian is Test {
     assertEq(withGuardian.guardian(), guardian);
   }
 
+  function testConstructorRevertsOnZeroGuardian() external {
+    vm.expectRevert(abi.encodeWithSelector(IWithGuardian.InvalidGuardian.selector, address(0)));
+    new ImplOwnable2StepWithGuardian(owner, address(0));
+  }
+
   function testTransferOwnershipIsTwoStep(address newOwner) external {
     vm.assume(newOwner != owner && newOwner != address(0));
     vm.prank(owner);

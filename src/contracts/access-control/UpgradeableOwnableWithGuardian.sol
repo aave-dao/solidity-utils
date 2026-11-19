@@ -40,6 +40,7 @@ abstract contract UpgradeableOwnableWithGuardian is OwnableUpgradeable, IWithGua
   function __Ownable_With_Guardian_init_unchained(
     address initialGuardian
   ) internal onlyInitializing {
+    if (initialGuardian == address(0)) revert InvalidGuardian(address(0));
     _updateGuardian(initialGuardian);
   }
 
